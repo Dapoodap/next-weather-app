@@ -30,7 +30,7 @@ const SearchBar = () => {
     e.preventDefault();
     try {
       const response = await axios.get(
-        `http://api.weatherapi.com/v1/forecast.json?q=${value}&days=3&key=b85a0e7583284eb8a7661607243003`
+        `https://api.weatherapi.com/v1/forecast.json?q=${value}&days=3&key=b85a0e7583284eb8a7661607243003`
       );
       setWeather(response.data);
       console.log(response.data);
